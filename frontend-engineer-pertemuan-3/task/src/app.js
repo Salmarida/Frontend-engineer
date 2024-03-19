@@ -4,6 +4,19 @@
  * dari file controllers/UserController.js
  */
 // CODE HERE
+const formattedUser = formatUser(user);
+
+// Contoh penggunaan fungsi findByName
+findByName(usernames, 'Isfa')
+  .then((result) => {
+    console.log("Pengguna yang ditemukan:", result);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
+// Contoh penggunaan fungsi fildetByMajor
+const usersByMajor = fildetByMajor(usernames, 'Android Engineer');
 
 /**
  * Fungsi Main.
